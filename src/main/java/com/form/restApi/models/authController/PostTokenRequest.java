@@ -1,4 +1,4 @@
-package Models.AuthController;
+package com.form.restApi.models.authController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,8 +45,9 @@ public class PostTokenRequest {
     }
 
     @JsonProperty("password")
-    public void setPassword(String password) {
+    public PostTokenRequest setPassword(String password) {
         this.password = password;
+        return this;
     }
 
     @JsonProperty("portalId")
@@ -55,8 +56,9 @@ public class PostTokenRequest {
     }
 
     @JsonProperty("portalId")
-    public void setPortalId(Integer portalId) {
+    public PostTokenRequest setPortalId(Integer portalId) {
         this.portalId = portalId;
+        return this;
     }
 
     @JsonProperty("refreshToken")
@@ -75,8 +77,9 @@ public class PostTokenRequest {
     }
 
     @JsonProperty("username")
-    public void setUsername(String username) {
+    public PostTokenRequest setUsername(String username) {
         this.username = username;
+        return this;
     }
 
     @JsonAnyGetter

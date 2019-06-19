@@ -1,4 +1,4 @@
-package Models.AuthController;
+package com.form.restApi.models.authController;
 
 import java.util.HashMap;
 import java.util.Map;
